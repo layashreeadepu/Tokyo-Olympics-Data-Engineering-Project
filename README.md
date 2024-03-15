@@ -1,10 +1,3 @@
-## Tokyo Olympics Data 🏅
-This repository contains data related to the Tokyo Olympics, specifically focusing on Athletics events, including information about athletes, coaches, entries by gender, medals won, and participating teams.
-
-# Data Azure End-to-End Project 🚀
-This dataset has been curated as part of an end-to-end data engineering project completed on Azure. The project involved utilizing Azure's Data Analytics, Data Lake, Data Warehouse, Databricks, and Power BI services to create a comprehensive data pipeline.
-
-# Athletics Data 🏃‍♂️
 # # Tokyo Olympics Data 🏅
 
 This repository contains data related to the Tokyo Olympics, specifically focusing on Athletics events, including information about athletes, coaches, entries by gender, medals won, and participating teams.
