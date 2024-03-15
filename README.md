@@ -39,3 +39,15 @@ This dataset has been curated as part of an end-to-end data engineering project 
 - **Discipline**: Athletic discipline the team is associated with
 - **Country**: Country the team represents
 - **Event**: Event the team participates in
+
+## Project Components
+
+- **Data Ingestion**: Data is ingested into Azure Data Lake Storage using Azure Data Factory pipelines.
+   
+- **Data Processing**: Raw data is processed using Azure Databricks for tasks such as data cleansing, transformation, and feature engineering.
+
+- **Data Storage**: Processed data is stored in Azure Data Lake Storage for further analysis and in Azure Data Warehouse for optimized querying.
+
+- **Data Analysis**: Azure Databricks is used for exploratory data analysis and deriving insights from the data.
+
+- **Data Visualization**: Power BI is utilized to create interactive dashboards and reports to visualize key insights and trends.
