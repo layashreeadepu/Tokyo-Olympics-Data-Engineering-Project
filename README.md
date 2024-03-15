@@ -51,3 +51,6 @@ This dataset has been curated as part of an end-to-end data engineering project 
 - **Data Analysis**: Azure Databricks is used for exploratory data analysis and deriving insights from the data.
 
 - **Data Visualization**: Power BI is utilized to create interactive dashboards and reports to visualize key insights and trends.
+
+- [Tokyo Olympics Data Engineering Project.pdf](https://github.com/layashreeadepu/Tokyo-Olympics-Data-Engineering-Project/files/14610143/Tokyo.Olympics.Data.Engineering.Project.pdf)
+
