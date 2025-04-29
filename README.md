@@ -1,63 +1,105 @@
+# Tokyo Olympics Data Engineering Project 🏅
 
+This project showcases an end-to-end data engineering pipeline built on **Microsoft Azure**, using data from the **Tokyo Olympics (Athletics events)**. It integrates ingestion, transformation, storage, analysis, and visualization of Olympic datasets, offering rich insights into athlete participation, performance, and medal distribution.
 
+## 🏃‍♀️ Project Motivation
 
-# Tokyo Olympics Data 🏅
+Olympic datasets offer valuable insights into **global sports trends, gender participation, and national performance metrics**. This project was designed to replicate a real-world data engineering scenario by building a scalable pipeline using Azure's cloud ecosystem.
 
+---
 
+## 📊 Dataset Overview
 
+The dataset focuses on **Athletics events** during the Tokyo Olympics and includes the following tables:
 
+- **Athletes**
+  - `PersonName`: Athlete’s name  
+  - `Country`: Representing country  
+  - `Discipline`: Athletic discipline  
 
+- **Coaches**
+  - `Name`: Coach’s name  
+  - `Country`: Representing country  
+  - `Discipline`: Specialization  
+  - `Event`: Event associated  
 
+- **Entries by Gender**
+  - `Discipline`, `Female`, `Male`, `Total`  
 
+- **Medals**
+  - `Team_Country`, `Gold`, `Silver`, `Bronze`, `Total`, `Rank`, `Rank by Total`  
 
-This repository contains data related to the Tokyo Olympics, specifically focusing on Athletics events, including information about athletes, coaches, entries by gender, medals won, and participating teams.
+- **Teams**
+  - `TeamName`, `Discipline`, `Country`, `Event`
 
-## Data Azure End-to-End Project 🚀
+---
 
-This dataset has been curated as part of an end-to-end data engineering project completed on Azure. The project involved utilizing Azure's Data Analytics, Data Lake, Data Warehouse, Databricks, and Power BI services to create a comprehensive data pipeline.
+## 🎯 Business Objectives
 
-## Athletics Data 🏃‍♂️
+- Enable data-driven insights into **medal trends, team performance**, and **gender representation**
+- Facilitate **real-time analytics and reporting** using cloud-native tools
+- Showcase cloud-based orchestration and analytics with **Azure**
 
-### Athletes
-- **PersonName**: Name of the athlete
-- **Country**: Representing country of the athlete
-- **Discipline**: Athletic discipline of the athlete
+---
 
-### Coaches
-- **Name**: Name of the coach
-- **Country**: Country the coach represents
-- **Discipline**: Athletic discipline the coach specializes in
-- **Event**: Event the coach is associated with
+## ☁️ Architecture & Tools
 
-### Entries by Gender
-- **Discipline**: Athletic discipline
-- **Female**: Number of female athletes entered
-- **Male**: Number of male athletes entered
-- **Total**: Total number of athletes entered
+| Layer              | Tools & Services Used                                                                 |
+|-------------------|----------------------------------------------------------------------------------------|
+| Data Ingestion     | **Azure Data Factory**                                                                |
+| Data Storage       | **Azure Data Lake Storage**, **Azure Synapse Analytics**                              |
+| Data Processing    | **Azure Databricks (PySpark)**                                                        |
+| Data Analysis      | **Exploratory Data Analysis (EDA)** in **Databricks Notebooks**                       |
+| Data Visualization | **Power BI Dashboards**                                                               |
 
-### Medals 🥇🥈🥉
-- **Rank**: Overall rank of the team based on total medals won
-- **Team_Country**: Country of the team
-- **Gold**: Number of gold medals won
-- **Silver**: Number of silver medals won
-- **Bronze**: Number of bronze medals won
-- **Total**: Total number of medals won
-- **Rank by Total**: Rank based on total medals won
+---
 
-### Teams
-- **TeamName**: Name of the team
-- **Discipline**: Athletic discipline the team is associated with
-- **Country**: Country the team represents
-- **Event**: Event the team participates in
+## 🔄 Data Pipeline Steps
 
-## Project Components
+1. **Data Ingestion**  
+   Raw CSV files ingested into Azure Data Lake via **ADF pipelines**
 
-- **Data Ingestion**: Data is ingested into Azure Data Lake Storage using Azure Data Factory pipelines.
-   
-- **Data Processing**: Raw data is processed using Azure Databricks for tasks such as data cleansing, transformation, and feature engineering.
+2. **Data Cleansing & Transformation**  
+   Performed in **Azure Databricks** using PySpark (handling nulls, deduplication, and formatting)
 
-- **Data Storage**: Processed data is stored in Azure Data Lake Storage for further analysis and in Azure Data Warehouse for optimized querying.
+3. **Data Storage**  
+   - Raw & curated layers in **Data Lake**  
+   - Analytical layer in **Azure Synapse Analytics** for BI querying  
 
-- **Data Analysis**: Azure Databricks is used for exploratory data analysis and deriving insights from the data.
+4. **Exploratory Analysis**  
+   Conducted on transformed datasets using PySpark and SQL in **Databricks**
 
-- **Data Visualization**: Power BI is utilized to create interactive dashboards and reports to visualize key insights and trends.
+5. **Reporting**  
+   **Power BI** reports and dashboards built from Synapse to track medal rankings, team participation, and gender distribution
+
+---
+
+## 📌 Key Insights
+
+- Top-performing countries in Athletics based on total medals
+- Gender participation trends across disciplines
+- Events with highest representation by country
+
+---
+
+## 📈 Visualizations
+
+Interactive reports created in Power BI to display:
+- Medal tallies by country
+- Gender-based participation
+- Discipline-specific analysis
+
+> *Visual samples available in `/images/` or linked dashboards.*
+
+---
+
+## 🧠 Skills & Tools Used
+
+- **Cloud**: Azure Data Factory, Azure Data Lake, Azure Databricks, Azure Synapse
+- **Data Processing**: PySpark, SQL
+- **Visualization**: Power BI
+- **Data Engineering Concepts**: ETL pipeline, EDA, Cloud Storage, Distributed Processing
+
+---
+
+Would you like me to design a matching GitHub project image for this?
