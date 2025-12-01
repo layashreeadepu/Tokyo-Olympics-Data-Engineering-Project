@@ -101,5 +101,3 @@ Interactive reports created in Power BI to display:
 - **Data Engineering Concepts**: ETL pipeline, EDA, Cloud Storage, Distributed Processing
 
 ---
-
-Would you like me to design a matching GitHub project image for this?
